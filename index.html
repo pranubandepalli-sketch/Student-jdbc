@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Student Management System</h1>
+    <p>Node.js Frontend + Spring MVC + JDBC + MySQL</p>
+</header>
+
+<main>
+    <section class="card">
+        <h2>Add Student</h2>
+        <form id="studentForm">
+            <input id="name" placeholder="Name" required>
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="age" type="number" min="1" placeholder="Age" required>
+            <input id="course" placeholder="Course" required>
+            <button type="submit">Save Student</button>
+        </form>
+        <p id="message"></p>
+    </section>
+
+    <section class="card">
+        <div class="heading">
+            <h2>Students</h2>
+            <button onclick="loadStudents()">Refresh</button>
+        </div>
+        <div id="students"></div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
